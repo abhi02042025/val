@@ -2,26 +2,59 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Happy Valentine ❤️</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Valentine's Day - My Love for KAMMO</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <header>
+        <section id="valentine-proposal" class="hero-section top-proposal">
+            <h2><i class="fas fa-heart"></i> Happy Valentine's Day!</h2>
+            
+            <div class="teddy-container">
+                <div class="teddy">🧸💋</div>
+            </div>
+            <h1 class="fade-in">My Dearest KAMMO</h1>
+            
+            <div class="photo-highlight-container">
+                <img src="fav.jpg" alt="Our Special Photo" class="highlight-photo">
+            </div>
+            
+            <div class="proposal-container">
+                <p class="proposal-text">Will you be my Valentine? 💕</p>
+                <div class="button-container">
+                    <button id="yesBtn" class="valentine-btn yes-btn">Yes! 💖</button>
+                    <button id="noBtn" class="valentine-btn no-btn">No 😢</button>
+                    <button id="timeBtn" class="valentine-btn time-btn" style="display: none;"><i class="fas fa-clock"></i> Time</button>
+                </div>
+            </div>
+        </section>
+        <nav class="main-nav">
+            <a href="memories.html" class="nav-link">Our Memories</a>
+            <a href="loveletter.html" class="nav-link">Love Letter</a>
+        </nav>
+    </header>
 
-    <div class="container">
-        <h1>Happy Valentine’s Day ❤️</h1>
-        <p class="message">
-            To the most beautiful girl in my life 💕<br>
-            You make my world brighter every day 🌸
-        </p>
-
-        <button onclick="showLove()">Click for a Surprise 💌</button>
-
-        <p id="surprise" class="hidden">
-            I love you more than words can say 💖💖💖
-        </p>
+    <div class="music-control">
+        <button id="musicToggle" class="music-toggle-btn" title="Toggle Music">
+            <i class="fas fa-music"></i>
+        </button>
+    </div>
+    
+    <div class="card" style="display: none;">
+        <h2>Our Song 🎵</h2>
+        <p style="text-align: center; margin-bottom: 15px; font-size: 0.9em; color: #666;">Our special love song 💕</p>
+        <button id="playPauseBtn" class="play-button"><i class="fas fa-play"></i> Play</button>
+        <audio id="song" src="Finding Her Kushagra 128 Kbps (3).mp3" autoplay></audio>
     </div>
 
-    <div class="hearts"></div>
+    <footer>
+        <p>Forever yours, with love.</p>
+    </footer>
 
     <script src="script.js"></script>
 </body>
